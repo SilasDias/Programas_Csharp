@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaseMoedas_TESTE", "NotaseMoedas_TESTE\NotaseMoedas_TESTE.csproj", "{1802E475-A4A2-44BB-B69C-DD6CC3AEF688}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1802E475-A4A2-44BB-B69C-DD6CC3AEF688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1802E475-A4A2-44BB-B69C-DD6CC3AEF688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1802E475-A4A2-44BB-B69C-DD6CC3AEF688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1802E475-A4A2-44BB-B69C-DD6CC3AEF688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB04A5DF-607E-46DF-9F36-4B25B3FEDF17}
+	EndGlobalSection
+EndGlobal
