@@ -48,7 +48,9 @@ namespace Tipos_de_Triangulos
             }else if(a * a < b * b + c * c)
             {
                 Console.WriteLine("TRIANGULO ACUTANGULO");
-            }else if(a == b && b == c)
+            }
+
+            if (a == b && b == c)
             {
                 Console.WriteLine("TRIANGULO EQUILATERO");
             }else if(a == b || b == c)
