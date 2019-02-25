@@ -7,27 +7,22 @@ namespace Tempo_de_Jogo
     {
         static void Main(string[] args)
         {
-            double inicio, fim, tempo;
+            int inicio, fim, tempo;
 
             string[] vet;
             vet = Console.ReadLine().Split(' ');
-            inicio = double.Parse(vet[0]);
-            fim = double.Parse(vet[1]);
+            inicio = int.Parse(vet[0]);
+            fim = int.Parse(vet[1]);
 
-            if(inicio == fim)
-            {
-                Console.WriteLine("O JOGO DUROU 24 HORA(S)");
-            }
-            if (fim < inicio)
-            {
-                tempo = ((24 - inicio) + fim);
-            }else {
-                tempo = (fim - inicio);
+            tempo = fim - inicio;
 
-            } if(tempo < 24 && tempo > 1)
+            if(tempo >= 1 && tempo <= 24)
             {
                 Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S)");
-
+            }else if(tempo < 0 || tempo == 0)
+            {
+                tempo = 24 + (fim - inicio);
+                Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S)");
             }
             Console.ReadLine();
         }
