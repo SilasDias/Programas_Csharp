@@ -10,36 +10,34 @@ namespace Tempo_de_Jogo_Minutos
     {
         static void Main(string[] args)
         {
-            int inicio, minutoinicial, minutofinal, minutos, fim, tempo;
+            int inicio, minutos, fim, tempo, horainicial, horafinal, minutoinicial, minutofinal;
 
             string[] vet;
             vet = Console.ReadLine().Split(' ');
-            inicio = int.Parse(vet[0]);
+            horainicial = int.Parse(vet[0]);
             minutoinicial = int.Parse(vet[1]);
-            fim = int.Parse(vet[2]);
+            horafinal = int.Parse(vet[2]);
             minutofinal = int.Parse(vet[3]);
 
-            tempo = inicio - fim;
-            if(tempo < 0)
+            minutoinicial = minutoinicial * 0.01;
+            minutofinal = minutofinal * 0.01;
+
+            inicio = horainicial + minutoinicial;
+            fim = horafinal + minutofinal;
+
+            tempo = fim - inicio;
+
+            if (tempo >= 1 && tempo <= 24)
             {
-                tempo = 24 + (inicio - fim);
+                Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S)");
             }
-            minutos = minutoinicial - minutofinal;
-            if(minutos < 0)
+            else if (tempo < 0 || tempo == 0)
             {
-                minutos = 60 + (minutoinicial - minutofinal);
-                tempo--;
+                tempo = 24 + (fim - inicio);
+                Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S)");
             }
 
-            if (inicio == fim && minutoinicial == minutofinal)
-            {
-                Console.WriteLine("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
-            }
-            else
-            {
-                Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S) E " + minutos+ " MINUTO(S)");
-            }
-           
+
             Console.ReadLine();
         }
     }
