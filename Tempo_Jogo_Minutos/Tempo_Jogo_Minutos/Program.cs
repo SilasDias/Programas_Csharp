@@ -40,19 +40,11 @@ namespace Tempo_de_Jogo_Minutos
             {
                 hora = 24;
                 Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTO(S)");
-            }
-            /*
-            if (tempo >= 1 && tempo <= 24)
+            }else
             {
-                Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S)");
+                Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTO(S)");
             }
-            else if (tempo < 0 || tempo == 0)
-            {
-                tempo = 24 + (fim - inicio);
-                Console.WriteLine("O JOGO DUROU " + tempo + " HORA(S)");
-            }*/
-
-
+           
             Console.ReadLine();
         }
     }
