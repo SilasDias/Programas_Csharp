@@ -26,7 +26,6 @@ namespace Tempo_de_Jogo_Minutos
             if (hora < 0)
             {
                 hora += 24;
-                
             }
             if ( minutos < 0)
             {
