@@ -39,8 +39,6 @@ namespace Tempo_de_Jogo_Minutos
             {
                 Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTO(S)");
             }
-           
-           
             Console.ReadLine();
         }
     }
