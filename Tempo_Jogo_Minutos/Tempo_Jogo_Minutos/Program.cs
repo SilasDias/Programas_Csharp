@@ -23,27 +23,24 @@ namespace Tempo_de_Jogo_Minutos
             hora = horafinal - horainicial;
             minutos = minutofinal - minutoinicial;
 
-            Console.WriteLine(hora);
-            Console.WriteLine(minutos);
-
-            if (hora < 0 && minutos > 0)
+            if (hora < 0)
             {
-                minutos = minutos - 60;
-                hora = 0;
-                Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E "+minutos+" MINUTO(S)");
-            } else if (minutos < 0 && hora > 0)
+                hora += 24;
+                
+            }
+            if ( minutos < 0)
             {
-                minutos = minutos + 60;
-                hora = hora - 1;
-                Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTO(S)");
-            }else if (hora == 0 && minutos == 0)
+                minutos += 60;
+                hora -= 1;
+            }
+            if (minutos == 0 && hora == 0)
             {
-                hora = 24;
-                Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTO(S)");
+                Console.WriteLine("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
             }else
             {
                 Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTO(S)");
             }
+           
            
             Console.ReadLine();
         }
