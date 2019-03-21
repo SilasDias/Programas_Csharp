@@ -41,7 +41,7 @@ namespace DDD
                     estado = "Belo Horizonte";
                     break;
                 default:
-                    Console.WriteLine("DDD nao cadastrado");
+                    estado = "DDD nao cadastrado";
                     break;
             }
             Console.WriteLine(estado);
