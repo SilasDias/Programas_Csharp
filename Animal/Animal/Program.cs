@@ -10,7 +10,7 @@ namespace Animal
     {
         static void Main(string[] args)
         {
-            string a, b, c, cadeia;
+            string a, b, c;
 
             a = Console.ReadLine();
             b = Console.ReadLine();
@@ -68,10 +68,7 @@ namespace Animal
                     }
                 }
             }
-
             Console.ReadLine();
-
-
         }
     }
 }
