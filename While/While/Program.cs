@@ -10,13 +10,16 @@ namespace While
     {
         static void Main(string[] args)
         {
-            int valor = int.Parse(Console.ReadLine());
+            int valor, soma;
+            valor = int.Parse(Console.ReadLine());
 
-            do
+            soma = 0;
+            while (valor != 0)
             {
-                valor++;
-            } while (valor == 0);
-            Console.WriteLine(valor);
+                valor = int.Parse(Console.ReadLine());
+                soma++;
+            }
+            Console.WriteLine(soma);
             Console.ReadLine();
         }
     }
