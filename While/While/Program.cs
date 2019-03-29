@@ -14,9 +14,9 @@ namespace While
 
             do
             {
-                Console.WriteLine(valor);
                 valor++;
             } while (valor == 0);
+            Console.WriteLine(valor);
             Console.ReadLine();
         }
     }
