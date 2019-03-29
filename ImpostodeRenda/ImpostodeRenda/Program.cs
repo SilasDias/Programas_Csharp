@@ -18,19 +18,14 @@ namespace ImpostodeRenda
             }
             else if (salario > 2000.00 && salario <= 3000.00)
             {
-                Console.WriteLine("R$ " +(salario*08)/100+salario.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("R$ " +((salario-2000)*0.08).ToString("F2", CultureInfo.InvariantCulture));
             }
-            else if (salario > 800.00 && salario <= 1200.00)
+            else if (salario > 3000.00 && salario <= 4500.00)
             {
-                Console.WriteLine("R$ " + (salario * 08) / 100 + salario.ToString("F2", CultureInfo.InvariantCulture));
-            }
-            else if (salario > 1200.00 && salario <= 2000.00)
+                Console.WriteLine("R$ " + ((salario -3000)*0.18+(1000*0.08)).ToString("F2", CultureInfo.InvariantCulture));
+            }else if (salario > 4500.00)
             {
-                Console.WriteLine("R$ " + (salario * 08) / 100 + salario.ToString("F2", CultureInfo.InvariantCulture));
-            }
-            else if (salario > 2000.00)
-            {
-                Console.WriteLine("R$ " + (salario * 08) / 100 + salario.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("R$ " + ((salario-4500)*0.28+(1500*0.18)).ToString("F2", CultureInfo.InvariantCulture));
             }
             else
             {
