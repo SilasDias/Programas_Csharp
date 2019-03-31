@@ -18,7 +18,7 @@ namespace Crescente_Decrescente
 
             while(x != y)
             {
-                if(x > y)
+                if(x < y)
                 {
                     Console.WriteLine("Crescente");
                 }
@@ -26,6 +26,10 @@ namespace Crescente_Decrescente
                 {
                     Console.WriteLine("Decrescente");
                 }
+                vet = Console.ReadLine().Split(' ');
+                x = int.Parse(vet[0]);
+                y = int.Parse(vet[1]);
+
             }
             Console.ReadLine();
         }
