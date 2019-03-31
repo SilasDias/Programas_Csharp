@@ -16,8 +16,9 @@ namespace While
             soma = 0;
             while (valor != 0)
             {
+                soma = soma + valor;
                 valor = int.Parse(Console.ReadLine());
-                soma++;
+                
             }
             Console.WriteLine(soma);
             Console.ReadLine();
