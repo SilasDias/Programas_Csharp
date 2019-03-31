@@ -23,9 +23,16 @@ namespace MediaIdade
                 cont++;
                 idade = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
+            if (cont == 0)
+            {
+                Console.WriteLine("Impossivel calcular");
+            }
+            else { 
             Console.WriteLine(" ");
             media = soma / cont;
-            Console.WriteLine(media);
+            Console.WriteLine(media.ToString("F2",CultureInfo.InvariantCulture));
+            }
+            Console.ReadLine();
         }
     }
 }
