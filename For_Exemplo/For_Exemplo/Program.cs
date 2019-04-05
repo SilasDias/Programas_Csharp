@@ -20,7 +20,8 @@ namespace For_Exemplo
                 soma = soma +x;
             }
             Console.WriteLine(soma);
-            Console.ReadLine();            
+            Console.ReadLine();
+
         }
     }
 }
