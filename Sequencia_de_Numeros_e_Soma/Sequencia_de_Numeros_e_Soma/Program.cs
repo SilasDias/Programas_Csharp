@@ -33,7 +33,7 @@ namespace Sequencia_de_Numeros_e_Soma
                 Console.Write(i);
                 soma = soma + i;
             }
-            Console.WriteLine(soma);
+            Console.WriteLine("Sum="+soma);
             Console.ReadLine();
         }
     }
