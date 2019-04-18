@@ -10,7 +10,7 @@ namespace Sequencia_Logica_2
     {
         static void Main(string[] args)
         {
-            int x, y, min, max;
+            int x, y, min, max, i, j=0, dividi=0;
 
             string[] vet;
             vet = Console.ReadLine().Split(' ');
@@ -27,11 +27,15 @@ namespace Sequencia_Logica_2
                 min = y;
                 max = x;
             }
-            for(int j = 0; j< max; j++) {
-            for (int i = 0; i < min; i++)
+            for (i = 1; i <= max; i++)
             {
-                    Console.Write(i + " ");
-            }
+                Console.Write(i + " ");
+                j++;
+                if (j == min)
+                {
+                    Console.WriteLine();
+                    j = 0;
+                }
             }
             Console.ReadLine();
         }
