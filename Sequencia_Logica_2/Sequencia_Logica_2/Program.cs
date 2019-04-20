@@ -29,9 +29,14 @@ namespace Sequencia_Logica_2
             }
             for (i = 1; i <= max; i++)
             {
-                Console.Write(i + " ");
+                Console.Write(i);
                 j++;
-                if (j == min)
+
+                if (i < max && j != min)
+                {
+                    Console.Write(" ");
+                }
+                else
                 {
                     Console.WriteLine();
                     j = 0;
