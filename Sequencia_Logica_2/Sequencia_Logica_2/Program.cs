@@ -10,7 +10,7 @@ namespace Sequencia_Logica_2
     {
         static void Main(string[] args)
         {
-            int x, y, min, max, i, j=0, dividi=0;
+            int x, y, min, max, i, j=0;
 
             string[] vet;
             vet = Console.ReadLine().Split(' ');
