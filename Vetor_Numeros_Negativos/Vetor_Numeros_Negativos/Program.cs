@@ -28,7 +28,7 @@ namespace Vetor_Numeros_Negativos
                     Console.WriteLine(vet[i]);
                 }
             }
-            Console.ReadLine();
+            Console.ReadLine() ;
         }
     }
 }
