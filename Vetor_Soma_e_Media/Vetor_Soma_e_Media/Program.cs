@@ -33,7 +33,9 @@ namespace Vetor_Soma_e_Media
             {
                 soma = soma + a[i];
             }
-
+            double media = soma / n;
+            Console.WriteLine(soma.ToString("F2",CultureInfo.InvariantCulture));
+            Console.WriteLine(media.ToString("F2", CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
     }
