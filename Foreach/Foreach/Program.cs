@@ -20,9 +20,9 @@ namespace Foreach
                 vet[i] = Console.ReadLine();
             }
             Console.WriteLine("Nomes lidos: ");
-            for(int i=0; i<n; i++)
+            foreach(string elemento in vet)
             {
-                Console.WriteLine(vet[i]);
+                Console.WriteLine(elemento);
             }
             Console.ReadLine();
         }
