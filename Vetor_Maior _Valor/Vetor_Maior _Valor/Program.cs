@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Vetor_Maior__Valor
 {
@@ -29,19 +30,15 @@ namespace Vetor_Maior__Valor
             for (int i = 0; i < n; i++)
             {
                 x++;
-                if (a[i] > e)
+                if (a[i] > valor)
                 {
                     e = x;
                     valor = (double) a[i];
                 }
             }
-            Console.WriteLine(valor);
+            Console.WriteLine(valor.ToString("F1",CultureInfo.InvariantCulture));
             Console.WriteLine(e);
             Console.ReadLine();
-
-
-
-
         }
     }
 }
