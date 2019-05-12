@@ -36,7 +36,7 @@ namespace Vetor_Maior_Idade
                     valor = idades[i];
                 }
             }
-            Console.WriteLine("Pessoa mais velha:"+nomes[e]);
+            Console.WriteLine("Pessoa mais velha: "+nomes[e]);
             Console.ReadLine();
         }
     }
