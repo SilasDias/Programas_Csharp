@@ -13,7 +13,7 @@ namespace Vetor_Media_Numeros_Reais
         {
             int n;
             double[] vet;
-            double media=0, soma=0;
+            double media=0.0, soma=0.0;
 
             n = int.Parse(Console.ReadLine());
             vet = new double[n];
@@ -21,19 +21,20 @@ namespace Vetor_Media_Numeros_Reais
             string[] s = Console.ReadLine().Split(' ');
             for(int i = 0; i < n; i++)
             {
-                vet[i] = int.Parse(s[i]);
-                soma = vet[i] + soma;
+                vet[i] = double.Parse(s[i]);
+                soma = (double) soma + vet[i];
             }
-            media = soma / n;
-            Console.WriteLine(media);
+
+            media = (double) soma / n;
+            Console.WriteLine(media.ToString("F2", CultureInfo.InvariantCulture));
+
             for (int i = 0; i < n; i++)
             {
                 if(vet[i] < media)
                 {
-                    Console.Write(vet[i] + " ");
+                    Console.WriteLine(vet[i].ToString("F2",CultureInfo.InvariantCulture));
                 }
             }
-            Console.WriteLine();
             Console.ReadLine();
         }
     }
