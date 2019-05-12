@@ -32,7 +32,7 @@ namespace Vetor_Media_Pare
                 }
             }
             media = soma / cont;
-            Console.WriteLine(media.ToString("F2",CultureInfo.InvariantCulture));
+            Console.WriteLine(media.ToString("F1",CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
     }
