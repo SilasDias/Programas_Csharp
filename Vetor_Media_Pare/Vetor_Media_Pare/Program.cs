@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Globalization;
 namespace Vetor_Media_Pare
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int n, cont, soma=0, media=0;
+            int n, cont, soma = 0;
+            double media=0;
             int[] vet;
 
             n = int.Parse(Console.ReadLine());
@@ -31,7 +32,7 @@ namespace Vetor_Media_Pare
                 }
             }
             media = soma / cont;
-            Console.WriteLine(media);
+            Console.WriteLine(media.ToString("F2",CultureInfo.InvariantCulture));
             Console.ReadLine();
         }
     }
